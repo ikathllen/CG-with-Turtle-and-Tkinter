@@ -1,7 +1,7 @@
 import turtle
 from tkinter import *
 
-janela = Tk() 
+window = Tk() 
 
 def write_f(i, j):
     tt = turtle.Turtle()
@@ -92,14 +92,14 @@ def fourth_name():
     turtle.title("fourth")
     screen.onclick(write_d)
 
-janela.title('Atividade-CG ')
-botao1 = Button(janela, text='first name', width=20, command=first_name)
+window.title('CG-with-Turtle-and-Tkinter')
+botao1 = Button(window, text='first name', width=20, bg = '#ffb6c1', command=first_name)
 botao1.place(x=0, y=10)
-botao2 = Button(janela, text='second name', width=20, command=second_name)
+botao2 = Button(window, text='second name', width=20, bg = '#ffb6c1', command=second_name)
 botao2.place(x=0, y=40)
-botao3 = Button(janela, text='third name', width=20, command=third_name)
+botao3 = Button(window, text='third name', width=20, bg = '#ffb6c1', command=third_name)
 botao3.place(x=0, y=70)
-botao4 = Button(janela, text='fourth name', width=20, command=fourth_name)
+botao4 = Button(window, text='fourth name', width=20, bg = '#ffb6c1', command=fourth_name)
 botao4.place(x=0, y=100)
 
-janela.mainloop()
+window.mainloop()

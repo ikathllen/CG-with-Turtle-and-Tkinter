@@ -55,6 +55,19 @@ def write_n(i, j):
     tt.forward(150)
     tt.right(175)
 
+def write_d(i, j):
+    tt = turtle.Turtle()
+    tt.shape("turtle")
+    tt.color("green")
+    tt.pen(fillcolor="white", pensize=10)
+    tt.speed(6)
+
+    tt.home()
+    tt.left(90)
+    tt.backward(150)
+    tt.right(90)
+    tt.circle(80, 180)
+
 def first_name():
     turtle.Screen().bgcolor("black")
     screen = turtle.Screen()
@@ -73,6 +86,12 @@ def third_name():
     turtle.title("third")
     screen.onclick(write_n)
 
+def fourth_name():
+    turtle.Screen().bgcolor("black")
+    screen = turtle.Screen()
+    turtle.title("fourth")
+    screen.onclick(write_d)
+
 janela.title('Atividade-CG ')
 botao1 = Button(janela, text='first name', width=20, command=first_name)
 botao1.place(x=0, y=10)
@@ -80,5 +99,7 @@ botao2 = Button(janela, text='second name', width=20, command=second_name)
 botao2.place(x=0, y=40)
 botao3 = Button(janela, text='third name', width=20, command=third_name)
 botao3.place(x=0, y=70)
+botao4 = Button(janela, text='fourth name', width=20, command=fourth_name)
+botao4.place(x=0, y=100)
 
 janela.mainloop()
